@@ -44,7 +44,7 @@
 - Kill , Death, Assist , Level , Gold 값을 Feature 로 , 해당 유저들의 Feature 데이터들 시각화
 - ![img](https://lh3.googleusercontent.com/ykjxsjOK8Dvp07kW7YpQY4m5wNlit3G_PqAc9Tvrx89Dsh2O4V1NzPvWP1su_9DtiiYlxcHV2zF8M3E4wNPFBm4At5VoohGPMcaQAIeZCSgN5wJlnptWZuDci05C_bS4Cbuerw8Ol5TsI0U6wA)
 
-![img](https://lh5.googleusercontent.com/RwqIJy_MlqnQ6JTMWpOeV7hEypR6GUhU2ygzE9dLdXK7rXTs7atUDpZm01EIAgCNO0TfPJ0SohICsTyTyRuhqlTMlsNwFbb_cOuOPn2XrtSPkiub8lKhF0oiyXrytMoBrAqU44zAnJf7Ga070w)
+- ![img](https://lh5.googleusercontent.com/RwqIJy_MlqnQ6JTMWpOeV7hEypR6GUhU2ygzE9dLdXK7rXTs7atUDpZm01EIAgCNO0TfPJ0SohICsTyTyRuhqlTMlsNwFbb_cOuOPn2XrtSPkiub8lKhF0oiyXrytMoBrAqU44zAnJf7Ga070w)
 
 
 
@@ -74,4 +74,4 @@
 
 - ![img](https://lh6.googleusercontent.com/EM_BaDr61ItRGgcvPYQfxRp0HQzc94mqJzPEmirhwij6yND5aey1ct2R7G4ARiOXmM7vmMHT1bj7wrX9yCs7IEHr6lHthdZqL8r8yTwAltxjfyxfj8Oy8pg2mJTq8SETKkF9yg22fK3KgJrFTA)
 
-  ​																		<image 출처 : op.gg>
+  <image 출처 : op.gg>
