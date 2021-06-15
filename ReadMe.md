@@ -5,9 +5,9 @@
 
 
 
-## PPT 파일 
+## PDF 파일 
 
-- [PPT](troll_player_detection.pptx)
+### [PDF](troll_player_detection.pdf)
 
 ## 데이터 수집
 
