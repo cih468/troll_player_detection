@@ -58,7 +58,8 @@
 
 
 - 전처리가 끝난 상태의 데이터
-- Img - df_shuffled
+-![image](https://user-images.githubusercontent.com/28820900/138096321-35439e67-8bdf-45bb-9cd1-47a21047a94a.png) 
+
 
 
 
