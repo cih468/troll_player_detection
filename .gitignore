@@ -1,0 +1,7 @@
+# : comments
+
+# no .a files
+*.zip
+
+#no lolData
+/lolData
