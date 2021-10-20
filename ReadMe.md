@@ -55,9 +55,68 @@
 - 데이터가 더욱 충분하다면, 포지션 별 – 챔피언 별 통계치를 이용한다면 더욱 좋은 결과를 얻을 수 있을 것으로 보입니다.
 - ![img](https://lh5.googleusercontent.com/TDL2fSAiNBL4C6kTiBf5MtY9XIZrGF2N30kjR3q7DoMHlaQzmw55pYnsmB2LAnTvHAlTk7UJlMoM7oNb4JbFUobTtYga2D_KwdyHwQeU3xQsmM2Xms1jEPMAxykUtB2rJq-Ea51CvMjWU_FI-w)
 
-## Result Validation결과 검증
+
+
+- 전처리가 끝난 상태의 데이터
+- Img - df_shuffled
+
+
+
+## 트롤 유저 예측
+
+- 위의 데이터를 7:3으로 나누어 Train, Test 셋 생성
+
+  ### PCA 모델
+
+  - PCA 차원 축소 및 복원 과정을 통해 Test Data에 값 생성
+
+  - ```python
+    from sklearn.decomposition import PCA
+    
+    pca = PCA(n_components=1)
+    reduced = pca.fit_transform(pca_data)
+    recovered = pca.inverse_transform(reduced)
+    pca_pred = pd.DataFrame(recovered,columns=pca_data.columns)
+    pca_pred
+    ```
+
+  - Result
+
+    - Accuracy : 89.41%
+    - Binary Cross Entropy : 0.32
+
+  
+
+  ### Tensorflow 이용한 Deep Learning  모델
+
+  - Deep Learning 차원 축소 및 복원 과정을 통해 Test Data에 값 생성
+
+  - ```python
+    model = keras.Sequential()
+    model.add(tf.keras.layers.Dense(5,input_shape=(5,),activation='relu'))
+    model.add(tf.keras.layers.Dense(5,activation='relu'))
+    model.add(tf.keras.layers.Dense(10,activation='relu'))
+    model.add(tf.keras.layers.Dense(1,activation='sigmoid'))
+    model.compile(optimizer="adam", loss="binary_crossentropy",metrics=['binary_accuracy'])
+    
+    model.fit(x_train,y_train,epochs=20,batch_size=50,verbose=1)
+    ```
+
+  - Result
+
+    - Accuracy : 89.72%
+    - Binary Cross Entropy : 0.25
+
+  
+
+  최종 결과는 DL 모델이 PCA 를 이용한 모델보다 조금 더 좋은 결과를 보였습니다.
+
+  
+
+  ## Result Validation결과 검증
 
 - 실제 아이템으로 afk 플레이가 아니라고 구분한 데이터 중 , 모델이 afk 플레이로 판단한 데이터들입니다.빨간 박스에 보이는 것처럼 아이템을 전부 혹은 거의 다 판매한 유저들이 보입니다.
+
 - 빨간 박스에 보이는 것처럼 아이템을 전부 혹은 거의 다 판매한 유저들이 보입니다.
 
 ![image-20210615124548102](C:\Users\OPGG\AppData\Roaming\Typora\typora-user-images\image-20210615124548102.png)
